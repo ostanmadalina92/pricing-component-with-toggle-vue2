@@ -1,0 +1,67 @@
+h2 {
+  color: var(--grayish-blue);
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.middle-card {
+  background: linear-gradient(var(--gradient));
+  color: var(--white);
+  height: 25rem;
+}
+.middle-card h1 {
+  color: var(--white);
+}
+.middle-card .pricing-button {
+  color: var(--purple);
+  background: var(--white);
+}
+.middle-card .pricing-button:hover {
+  color: var(--white);
+  background: var(--purple);
+  border: 2px solid var(--white);
+}
+.first-card,
+.last-card {
+  background: var(--white);
+}
+.first-card h1,
+.last-card h1 {
+  color: var(--dark-grayish-blue);
+}
+.first-card .pricing-button,
+.last-card .pricing-button {
+  color: var(--white);
+  background: linear-gradient(var(--gradient));
+}
+.first-card .pricing-button:hover,
+.last-card .pricing-button:hover {
+  color: linear-gradient(var(--gradient));
+  background: var(--white);
+  border: 2px solid var(--purple);
+}
+.background {
+  position: fixed;
+  height: auto;
+}
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.top-right {
+  top: 0;
+  right: 0;
+}
+body {
+  margin: 0;
+}
+@media screen and (max-width: 800px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
